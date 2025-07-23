@@ -1,0 +1,23 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --second-family: 'Gilroy', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  height: auto;
+}
