@@ -120,19 +120,29 @@
             <div class="wrapper">
               <div class="content">
                 <div class="title-block">Укажите размеры вашей теплицы</div>
-                <div class="more">Как правильно делать замеры</div>
+                <a href="#" class="more">Как правильно делать замеры</a>
 
                 <div class="options">
                   <div class="options-title">Выберите вид теплицы</div>
                   <div class="options-wrapper">
                     <div class="option">
                       <img src="./image/option-photo.png" alt="" />
-                      <input type="radio" class="radio-input" />
+                      <input
+                        type="radio"
+                        id="r-1"
+                        name="r1"
+                        class="radio-input"
+                      />
                       <label for="">Двухскатная</label>
                     </div>
                     <div class="option">
                       <img src="./image/option-photo-2.png" alt="" />
-                      <input type="radio" class="radio-input" />
+                      <input
+                        type="radio"
+                        id="r-1"
+                        name="r1"
+                        class="radio-input"
+                      />
                       <label for="">Арочная</label>
                     </div>
                   </div>
@@ -140,16 +150,22 @@
 
                 <div class="options">
                   <div class="options-title">Укажите размер теплицы</div>
-                  <input
-                    type="text"
-                    placeholder="Длина теплицы, м"
-                    class="input-text"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Высота теплицы, м"
-                    class="input-text"
-                  />
+                  <div class="select-block">
+                    <select name="" id="">
+                      <option value="">Длина теплицы, м</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                  <div class="select-block">
+                    <select name="" id="">
+                      <option value="">Высота теплицы, м</option>
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
                   <input
                     type="text"
                     placeholder="Ширина теплицы, м"
@@ -403,8 +419,25 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">Усиленный</label>
+                      <div class="block-info">
+                        <div class="block-info-text">
+                          Инновационный материал следующего поколения,
+                          специально разработанный для промышленных и бытовых
+                          теплиц
+                        </div>
+                        <div class="block-info-text">
+                          Диффузный свет, составляющий в среднем 1/10
+                          интенсивности прямых лучей, поглощается растением
+                          почти полностью, и коэффициент его использования
+                          намного больше. Рассеянный свет выгоднее и по составу
+                          - в нем до 50 - 60% желто-красных лучей (ФАР), важных
+                          для фотосинтеза, а в прямом их бывает всего 30 - 35%.
+                          В ясные дни диффузный свет составляет 10 - 15% от
+                          общей радиации, а в пасмурные - все 100%.
+                        </div>
+                      </div>
                     </div>
                     <div class="option option-checkbox">
                       <button class="btn-quest">
@@ -421,8 +454,8 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">Киви</label>
                     </div>
                     <div class="option option-checkbox">
                       <button class="btn-quest">
@@ -439,8 +472,8 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">Колибри</label>
                     </div>
                     <div class="option option-checkbox">
                       <button class="btn-quest">
@@ -457,8 +490,8 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">Smart</label>
                     </div>
                     <div class="option option-checkbox">
                       <button class="btn-quest">
@@ -475,8 +508,8 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">Стандарт ГОСТ</label>
                     </div>
                     <div class="option option-checkbox">
                       <button class="btn-quest">
@@ -493,8 +526,8 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">Практичный</label>
                     </div>
                     <div class="option option-checkbox">
                       <button class="btn-quest">
@@ -511,8 +544,8 @@
                           />
                         </svg>
                       </button>
-                      <input type="checkbox" class="checkbox-input" />
-                      <label for="">Сотовый</label>
+                      <input type="radio" name="r3" class="checkbox-input" />
+                      <label for="">TITAN SKY</label>
                     </div>
                   </div>
                 </div>
@@ -523,11 +556,11 @@
                   </div>
                   <div class="options-wrapper">
                     <div class="option option-radio">
-                      <input type="radio" class="checkbox-input" />
+                      <input type="radio" name="r2" class="checkbox-input" />
                       <label for="">4 мм</label>
                     </div>
                     <div class="option option-radio">
-                      <input type="radio" class="checkbox-input" />
+                      <input type="radio" name="r2" class="checkbox-input" />
                       <label for="">6 мм</label>
                     </div>
                   </div>
