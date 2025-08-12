@@ -62,3 +62,60 @@ function updateCarousel() {
     container.style.transform = 'translateX(0)';
   }, 300);
 }
+
+const selectLength = document.getElementById('greenHouseLength');
+const selectHeight = document.getElementById('greenHouseHeight');
+const modelsImg = document.querySelectorAll('.carousel-container img');
+const valuesLength = [
+  {
+    id: 'default',
+    path: 'models'
+  },
+  {
+    id: '2',
+    path: '2'
+  },
+  {
+    id: '3',
+    path: '3'
+  },
+  {
+    id: '4',
+    path: '4'
+  },
+  {
+    id: '5',
+    path: '5'
+  },
+  {
+    id: '6',
+    path: '6'
+  },
+  {
+    id: '7',
+    path: '7'
+  },
+  {
+    id: '8',
+    path: '8'
+  },
+]
+
+selectLength.addEventListener('change', (e) => {
+  let value = e.target.value;
+  
+  valuesLength.forEach((item) => {
+    const path = item.path;
+
+    if (value == path) {
+      changeImages(path);
+    }
+  })
+})
+
+function changeImages(path) {
+  modelsImg.forEach((img, index) => {
+    path === 'models' ? img.src = `./image/models/${index + 1}.webp` :  img.src = `./image/${path}/${index + 1}.webp`;
+  })
+}
+
